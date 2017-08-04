@@ -23,17 +23,18 @@ $ pip install LatLon
 
 Once you download [file_sorter.py](file_sorter.py), open it with your favorite text-editing sofware.
 
-Go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past the key in `gmaps_key`.
+Now go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past the key in `gmaps_key`.
 
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
 
-You can also change the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
+*optional* Redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
 
 ### Launching
 
 **Don't forget to make a backup first**.
+*Mac*
 ```
-MAC: python /Path/to/file_sorter.py
+python /Path/to/file_sorter.py
 ```
 
 ## Contributing
