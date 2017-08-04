@@ -30,6 +30,7 @@ Change the `dir_path` to the directory which contains all your pics **without an
 ### Launching
 
 **Don't forget to make a backup first**.
+
 *Mac*
 ```
 python /Path/to/file_sorter.py
