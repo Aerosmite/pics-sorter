@@ -4,8 +4,6 @@ A simple use of exif data with python to group pics by places and periods.
 
 ## Getting Started
 
-To make it works, you have to follow these following instructions.
-
 ### Prerequisites
 
 * [Pip](https://pip.pypa.io/en/stable/installing/) (if it is not done yet)
@@ -27,7 +25,7 @@ Now go get your own API key [here](https://developers.google.com/maps/documentat
 
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
 
-*optional* Redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
+*optional*: redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
 
 ### Launching
 
