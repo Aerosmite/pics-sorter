@@ -21,9 +21,12 @@ $ pip install LatLon
 
 ### Installing
 
-Once you download `file_sorter.py`, open it with your favorite text-editing sofware.
-You have to define several values after `# Init`. Go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past the key in `gmaps_key`
+Once you download [file_sorter.py](file_sorter.py), open it with your favorite text-editing sofware.
+
+Go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past the key in `gmaps_key`.
+
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
+
 You can also change the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
 
 ### Launching
@@ -35,13 +38,12 @@ MAC: python /Path/to/file_sorter.py
 
 ## Contributing
 
-Any improvement will be appreciated. If you have a faster way to get exif data from pics / mov files, feel free to contribute !
+Any improvement will be greatly appreciated.
+If you have a faster way to get exif data from pics / mov files, feel free to contribute !
 
-## Authors
+# Authors
 
 * **Mathieu Menoux** - *Initial work*
-
-If you have a faster way to get exif data from pics / mov files, feel free to contribute !
 
 ## License
 
