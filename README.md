@@ -35,6 +35,11 @@ Change the `dir_path` to the directory which contains all your pics **without an
 ```
 python /Path/to/file_sorter.py
 ```
+### How it works ?
+
+The program collect the `GPS` and `CreationDate` data of all the files in dir_path using Exiftool.
+
+Then, it test the distance and the duration between each files and if it's higher than `distance_max` or `duration_max` value, it groups all the previous matching files into one folder, named by the place and the period. 
 
 ## Contributing
 
