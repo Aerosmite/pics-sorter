@@ -41,7 +41,7 @@ python /Path/to/file_sorter.py
 Any improvement will be greatly appreciated.
 If you have a faster way to get exif data from pics / mov files, feel free to contribute !
 
-# Authors
+### Authors
 
 * **Mathieu Menoux** - *Initial work*
 
