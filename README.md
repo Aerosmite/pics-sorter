@@ -30,9 +30,9 @@ Change the `dir_path` to the directory which contains all your pics **without an
 ### Launching
 
 **Don't forget to make a backup first**.
-```
- >>> python /Path/to/file_sorter.py
-```
+
+Execute it like a basic .py program
+
 ### How it works ?
 
 The program collect the `GPS` and `CreationDate` data of all files in dir_path using Exiftool.
