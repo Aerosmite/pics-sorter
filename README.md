@@ -6,7 +6,7 @@ A simple use of exif data with python to group pics by places and periods. A goo
 
 ### Prerequisites
 
-* [Pip](https://pip.pypa.io/en/stable/installing/) (if it is not done yet)
+* [Pip](https://pip.pypa.io/en/stable/installing/)
 * [Exiftool](http://owl.phy.queensu.ca/~phil/exiftool/) by Phil Harvey (needs to be in the root directory)
 * The [googlemaps package](https://github.com/googlemaps/google-maps-services-python)
 ```
@@ -21,16 +21,15 @@ $ pip install LatLon
 
 Once you download [file_sorter.py](file_sorter.py), open it with your favorite text-editing sofware.
 
-Now go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past the key in `gmaps_key`.
+Now go get your own API key [here](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) and past it in `gmaps_key`.
 
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
 
-*optional*: redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
+*optional:* redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
 
 ### Launching
 
 **Don't forget to make a backup first**.
-
 ```
  >>> python /Path/to/file_sorter.py
 ```
