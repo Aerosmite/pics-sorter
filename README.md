@@ -25,7 +25,7 @@ Now go get your own API key [here](https://developers.google.com/maps/documentat
 
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
 
-*optional:* redefine the maximum distance or duration before spliting an event with `distance_max and duration_max`. 
+*optional: redefine the maximum distance or duration before spliting an event with* `distance_max` *and* `duration_max`. 
 
 ### Launching
 
