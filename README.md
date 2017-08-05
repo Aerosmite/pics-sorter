@@ -12,10 +12,6 @@ A simple use of exif data with python to group pics by places and periods. A goo
 ```
 $ pip install -U googlemaps
 ```
-* The [LatLon package](https://pypi.python.org/pypi/LatLon)
-```
-$ pip install LatLon
-```
 
 ### Installing
 
