@@ -7,6 +7,7 @@ import time
 from datetime import datetime
 import json
 import subprocess
+import re
 import googlemaps
 
 # Init
@@ -22,6 +23,8 @@ temp_path = os.path.join(dir_path,"temp")
 Month = ['January','February','March','April','May','June','July','August','September','October','November','December']
 # Allow files with no GPS data ?
 is_nonGPS_allowed = True
+# Allow unknown location folder to merge ?
+is_nonGPS_merge_allowed = True
 # Split conditions
 distance_max = 75 # in kilometers
 duration_max = 7*(24*60*60) # in seconds
@@ -92,7 +95,6 @@ def add_exif_to_list(filename_path):
 			is_file_allowed = True
 		elif is_nonGPS_allowed == True:
 			is_file_allowed = True
-			print "No GPS (allowed):",filename
 		else:
 			print "No GPS:",filename
 		if is_file_allowed == True:
@@ -159,7 +161,18 @@ def new_event():
 		os.makedirs(new_event_path)
 		print "Event created:",os.path.join(str(firstfile_date.year),new_event_name)
 	else:
-		print "Merged duplicates:",os.path.join(str(firstfile_date.year),new_event_name)
+		if middlefile_town == 'unknown':
+			if is_nonGPS_merge_allowed == False:
+				i = 2
+				while os.path.isdir(new_event_path+str(i)) == True:
+					i += 1
+				new_event_path += str(i)
+				os.makedirs(new_event_path)
+				print "Event created:",os.path.join(str(firstfile_date.year),new_event_name),str(i)
+			else:
+				print "Merged duplicates:",os.path.join(str(firstfile_date.year),new_event_name)
+		else:
+			print "Merged duplicates:",os.path.join(str(firstfile_date.year),new_event_name)
 
 	# moving files
 	for f in os.listdir(temp_path):
