@@ -21,7 +21,12 @@ Now go get your own API key [here](https://developers.google.com/maps/documentat
 
 Change the `dir_path` to the directory which contains all your pics **without any subdirectory**.
 
-*(optional) redefine the maximum distance or duration before spliting an event with* `distance_max` *and* `duration_max`. 
+Other editable values:
+* `distance_max`: the maximum distance before spliting an event
+* `duration_max`: the maximum duration before spliting an event
+* `Month`: edit it for you own language
+* `is_nonGPS_allowed`: allow files with no GPS data (only creation date)
+* `is_nonGPS_merge_allowed` : allow events with same date and no GPS data to merge 
 
 ### Launching
 
